@@ -1,0 +1,205 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('tablo.jpg'); /* Remplacez avec le chemin réel de l'image */
+    background-size: cover; /* Cette propriété assure que l'image couvre tout l'arrière-plan */
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+/* Style de la barre de navigation */
+
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid #FF5046;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style des boutons avec icônes */
+.navbar-button {
+    float: left; /* Aligner à gauche */
+    display: block;
+    color: #FF5046;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: 100px;
+}
+
+/* Style des icônes */
+.navbar-button i {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    color: #FF5046;
+    
+}
+
+.navbar-button:last-child {
+    float: right; /* Aligner à droite */
+}
+
+/* Styles pour les boutons */
+.navbar-button {
+    text-align: center;
+    padding: 14px 20px;
+    color: #FF5046;
+    text-decoration: none;
+}
+
+.central-text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    
+    text-align: justify;
+    text-align: center;
+    /* Ajout des bordures rouges à gauche et à droite */
+    border-left: 3px solid #FF5046;
+    border-right: 3px solid #FF5046;
+}
+
+.left {
+    background-color: #333;
+}
+
+.right {
+    background-color: #333;
+}
+
+.welcome-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style de l'écran de bienvenue */
+.welcome-screen {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Style des boutons */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.retro70 {
+    background-color: #ff007f;
+    color: white;
+}
+
+.chalkboard {
+    background-color: #666;
+    color: white;
+}
+
+/* Style des titres */
+.title {
+    font-size: 24px;
+    margin-top: 30px;
+}
+@font-face {
+    font-family: 'Eraser';
+    src: url('../fonts/Eraser-Regular.ttf') format('truetype');
+}
+
+.navbar-left-button,
+.navbar-right-button {
+    float: left; /* Aligner à gauche ou à droite */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+}
+
+.navbar-right-button {
+    float: right; /* Aligner à droite */
+}
+
+/* Style de base pour la barre de navigation */
+.navbar {
+            
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Liens de la barre de navigation */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Style pour le logo */
+.navbar img {
+    float: left;
+    margin-right: 10px; /* Ajoute un espacement à droite du logo */
+    margin-left: 10px;  /* Ajoute un espacement à gauche du logo */
+}
+
+
+/* Changement de couleur au survol */
+.navbar a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+/* Style pour l'écran d'accueil */
+.welcome-screen {
+    padding: 20px;
+    text-align: center;
+}
+
+
+svg {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */   
+    width: 100vw;
+}
+
+/* Ajoutez ces styles pour appliquer l'animation aux paths du SVG */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        fill: white;
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        fill: transparent;
+        opacity: 0;
+    }
+}
+
+/* Ajoutez des identifiants uniques pour chaque path du SVG */
+#path1, #path2, #path3, #path4, #path5, #path6, #path7 {
+    animation: flicker 1.5s infinite alternate, neon 1.5s infinite alternate;
+
+}

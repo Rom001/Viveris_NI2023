@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <title>Viveris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+
+        
+        h2 {
+        font-size: 1.8rem;
+        }
+        .container {
+        margin-top: 20vh;
+        }
+ 
+
+        body {
+        background: url('backgroundRetro.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-size: 18px;
+        font-family: "Helvetica Neue", sans-serif;
+        background-color: #010a01;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: #000000 ;
+        color:white
+        }
+
+        h1, h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        }
+        
+        
+        @keyframes letterBlink {
+            0%, 100% {
+                color: #fff;
+                
+                transform: translateY(0) rotate(0deg); /* Ajout de la rotation */
+                /* Ajout pour annuler la transformation translateY au début et à la fin de l'animation */
+            }
+            50% {
+                color: transparent;
+                transform: translateY(50px) rotate(30deg); /* Ajout de la rotation inclinée */
+            }
+        }
+        
+        .welcome-screen {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 4em;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+            text-shadow: 3px 5px 10px #000000 ;
+        }
+        
+        .letter {
+            animation: neonBlink 1.5s infinite;
+            font-family: 'Georgia', serif; /* Ajout pour changer le style de police */
+            padding: 5px; /* Ajout pour espacer les lettres */
+            margin: 5px; /* Ajout pour espacer les lettres */
+            display: inline-block; /* Ajout pour que les éléments enfants restent en ligne */
+            border-color: black;
+        }
+        
+        .letter-blink {
+            animation: letterBlink 5s infinite;
+            border-color: black;
+        }
+        
+        p {
+            color: white;
+            font-size: 1.2em;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="moderne.html" class="navbar-button"><i class="material-icons">arrow_back</i></a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="233" height="80" viewBox="0 0 233 80" fill="none" class="viveris_logo svg replaced-svg">
+            <path d="M189.413 48.1548C189.413 48.1548 190.439 48.8129 190.594 48.8903C190.8 48.9935 194.555 51.7548 198 51.7548C200.084 51.7548 201.6 50.4516 201.6 48.6258C201.6 46.4387 199.774 44.7677 196.232 43.3613C191.748 41.5871 186.116 38.0968 186.116 31.8387C186.116 26.6774 190.129 21.4645 198.161 21.4645C203.587 21.4645 207.755 24.2258 209.323 25.3742C209.742 25.6774 210.284 26.0581 210.284 26.0581L206.084 32.4064C206.084 32.4064 205.419 31.9032 205.206 31.7355C204.735 31.4774 200.929 28.6064 197.748 28.6064C195.871 28.6064 194.465 29.8581 194.465 31.2645C194.465 33.1935 196.032 34.6516 200.148 36.3226C204.213 37.9355 210.677 41.1161 210.677 48.2129C210.677 53.5806 206.039 59.0064 198.374 59.0064C191.594 59.0064 187.845 56.1935 186.645 54.9935C186.277 54.6258 185.955 54.2968 185.955 54.2968L189.413 48.1548Z" fill="#FF5046"></path>
+            <path d="M177.671 58.4839H169.432V36.4968H177.671V58.4839ZM178.123 21.9613H169.884V29.6258H178.123V21.9613Z" fill="#FF5046"></path>
+            <path d="M153.045 43.729C157.581 41.9032 160.761 38.0452 160.761 33.2516C160.761 27.0452 156.31 21.9871 149.394 21.9871H134.935V29.4645H148.716C151.426 29.4645 152.677 31.2193 152.677 33.4064C152.677 35.5935 151.348 37.6774 148.716 37.6774H141.032L152.232 58.4839H161.006L153.045 43.729Z" fill="#FF5046"></path>
+            <path d="M128.168 58.4839H104.581V51.0064H128.168V58.4839ZM119.91 36.4968H104.581V43.9742H119.91V36.4968ZM128.168 21.9871H104.581V29.4645H128.168V21.9871Z" fill="#FF5046"></path>
+            <path d="M97.7871 36.4968L93.2968 26.8903L86.5032 41.4064L77.3936 21.9871H68.329L85.4903 59.0064H87.2516L97.7871 36.4968Z" fill="#FF5046"></path>
+            <path d="M62.0129 58.4839H53.7742V36.4968H62.0129V58.4839ZM62.0129 21.9613H53.7742V29.6258H62.0129V21.9613Z" fill="#FF5046"></path>
+            <path d="M46.9548 36.4968L42.4645 26.8903L35.671 41.4064L26.5613 21.9871H17.4968L34.6581 59.0064H36.4194L46.9548 36.4968Z" fill="#FF5046"></path>
+        </svg>
+        <a href="index.html" class="navbar-button"><i class="material-icons">arrow_forward</i></a>
+    </div>
+    
+
+    <div class="welcome-screen">
+        <h1>
+            <span class="letter">R</span>
+            <span class="letter letter-blink">e</span>
+            <span class="letter">t</span>
+            <span class="letter">r</span>
+            <span class="letter">o</span>
+        </h1>
+        
+    </div>
+
+    <div class="central-text" style="background-color: black; opacity:0.9;">
+        <p style="opacity:1;">L'histoire de Viveris est une saga marquée par l'innovation, la croissance et un dévouement constant envers l'excellence. Fondée avec une vision ambitieuse, Viveris a évolué au fil des années pour devenir un acteur majeur dans le domaine des services informatiques et de l'ingénierie. Depuis nos débuts modestes, nous avons connu des réussites notables, en réalisant des projets qui ont laissé une empreinte durable dans le monde professionnel. Notre parcours reflète notre engagement envers la qualité, la collaboration et la satisfaction client. Aujourd'hui, fort de notre histoire riche, Viveris continue de tracer son chemin vers l'avenir avec confiance, portant en étendard l'esprit d'innovation et d'excellence qui définit notre identité.</p>
+    </div>
+
+</body>
+</html>
